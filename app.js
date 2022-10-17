@@ -27,7 +27,7 @@ var url =
 mongoose.connect(url, { useNewUrlParser: true })
 
 var cors = require('cors')
-app.use(cors)
+app.use(cors())
 
 app.use(function (req, res, next) {
   next(createError(404));
